@@ -15,21 +15,31 @@ body {
 .header-logo {
   margin-right: 20px;
 }
+.menu {
+  display: none;
+}
 .first-row {
   justify-content: space-between;
   display: flex;
   align-items: center;
 }
 .first-row .city-selection {
-  display: flex;
   align-items: center;
   margin-left: -70px;
+  cursor: pointer;
+  display: flex;
 }
 .first-row .city-selection select {
   font-size: 14px;
   margin-left: 8px;
   border: none;
   cursor: pointer;
+}
+.first-row .city-selection img {
+  border-radius: 100%;
+}
+.first-row .city-selection:hover img {
+  background: #F1F1F1;
 }
 .first-row .university-search input {
   font-size: 14px;
@@ -44,6 +54,12 @@ body {
   display: flex;
   align-items: center;
   margin-right: -50px;
+  cursor: pointer;
+  padding-right: 5px;
+}
+.first-row .liked:hover {
+  border-radius: 20px;
+  background: #F1F1F1;
 }
 .first-row .user-info {
   display: flex;
